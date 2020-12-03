@@ -1,21 +1,17 @@
-
-
-class VideoComponent{
-    constructor(){
+class VideoComponent {
+    constructor() {
 
     }
 
-    initializePlayer(){
+    initializePlayer() {
         const player = videojs('vid');
         const ModalDialog = videojs.getComponent('ModalDialog');
         const modal = new ModalDialog(player, {
-            temporary: false, 
+            temporary: false,
             closeable: true
         });
-    
+
         player.addChild(modal);
-    
+        
     }
-    
-    
 }
